@@ -18,8 +18,8 @@ a img{border:none;position:relative}
 iframe,img{max-width:100%;height:auto;min-width:0;min-height:0}
 li{margin:10px}
 /*! ヘッダー */
-header{padding:5px;margin:5px 50px 0 0;height:40px;text-align:right}
-header h2 a{font-size:24px;color:#609;margin-left:1em}
+header{padding:5px;height:40px;text-align:center}
+header h2 a{font-size:24px;color:#609}
 /*! ハンバーガー */
 .menu-btn{position:fixed;top:0;right:0;display:flex;height:40px;width:40px;justify-content:center;align-items:center;z-index:1000;background-color:#609;border-radius:8px 0 8px 8px;opacity:.8}
 .menu-btn:hover{opacity:.6}
