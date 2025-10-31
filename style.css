@@ -3,11 +3,11 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}
 blockquote,q{quotes:none}
-blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
 /*! 全体設定 */
 html{font-size:62.5%;scroll-behavior:smooth;box-sizing:border-box}
 *,::after,::before{box-sizing:inherit}
-body{font-family:"Helvetica Neue",Arial,sans-serif;font-size:1.7rem;font-weight:500;line-height:1.2;letter-spacing:.02em;background:#f0f0f0;color:#333;text-align:left;word-wrap:break-word;overflow-wrap:break-word;overflow-x:hidden}
+body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:1.7rem;font-weight:500;line-height:1.2;letter-spacing:.02em;background:#f0f0f0;color:#333;text-align:left;word-wrap:break-word;overflow-wrap:break-word;overflow-x:hidden}
 .widget{margin:1em 0}
 .invisible{visibility:hidden}
 .clearboth{clear:both}
@@ -18,7 +18,7 @@ a img{border:none;position:relative}
 iframe,img{max-width:100%;height:auto;min-width:0;min-height:0}
 li{margin:10px}
 /*! ヘッダー */
-header{padding:5px;height:40px;text-align:center}
+header{padding:5px;margin:5px 0;height:40px;text-align:center}
 header h2 a{font-size:24px;color:#609}
 /*! ハンバーガー */
 .menu-btn{position:fixed;top:0;right:0;display:flex;height:40px;width:40px;justify-content:center;align-items:center;z-index:1000;background-color:#609;border-radius:8px 0 8px 8px;opacity:.8}
@@ -30,7 +30,7 @@ header h2 a{font-size:24px;color:#609}
 #menu-btn-check{display:none}
 #menu-btn-check:checked~.menu-overlay{display:block}
 .menu-btn span{position:relative;display:block;width:25px;height:3px;border-radius:3px;background-color:transparent}
-.menu-btn span,.menu-btn span:after,.menu-btn span:before{content:"";display:block;height:3px;width:25px;border-radius:3px;background-color:#fff;position:absolute}
+.menu-btn span,.menu-btn span:after,.menu-btn span:before{content:'';display:block;height:3px;width:25px;border-radius:3px;background-color:#fff;position:absolute}
 .menu-btn span:before{bottom:8px}
 .menu-btn span:after{top:8px}
 .menu-content{padding:.5em;font-size:95%;text-align:center;width:330px;height:100%;position:fixed;top:0;right:-330px;z-index:80;background-color:#222;transition:all .3s;opacity:.9;overflow-y:auto}
@@ -39,12 +39,12 @@ header h2 a{font-size:24px;color:#609}
 .menu-content li a{color:#fff}
 #menu-btn-check:checked~.menu-content{right:0}
 /*! 全体配置設定 */
-.content-wrapper{display:grid;margin:30px;padding:0;width:100%;max-width:1500px;gap:20px}
+.content-wrapper{display:grid;margin:30px auto;padding:0;width:100%;max-width:1500px;gap:20px}
 /*! パンくずリスト */
 .breadcrumbs{list-style:none;font-size:14px;color:#444;margin:5px;padding:10px;border:0}
 .breadcrumbs-li{display:inline}
-.breadcrumbs-li:after{color:#666;font-weight:700;content:">"}
-.breadcrumbs-li:last-child:after{content:""}
+.breadcrumbs-li:after{color:#666;font-weight:700;content:'>'}
+.breadcrumbs-li:last-child:after{content:''}
 .breadcrumbs-a{color:#444}
 /*! カテゴリーラベル */
 .post-labels{display:flex;flex-wrap:wrap;justify-content:flex-end}
@@ -104,7 +104,7 @@ footer{font-size:1.5rem;margin-top:3em;padding:2em}
 .yoko-nav a{margin:5px;padding:5px}
 /*! トップへ戻る */
 .page_top{display:block;width:40px;height:40px;position:fixed;right:0;bottom:0;padding:15px 5px;border-radius:8px 8px 0 8px;text-align:center;text-decoration:none;background-color:#609;opacity:.8}
-.page_top::after{content:"";display:block;width:20px;height:20px;border-top:3px solid #fff;border-right:3px solid #fff;transform:rotate(-45deg);margin-left:5px}
+.page_top::after{content:'';display:block;width:20px;height:20px;border-top:3px solid #fff;border-right:3px solid #fff;transform:rotate(-45deg);margin-left:5px}
 /*! 目次作成プラグイン */
 .b-toc-container{background:#f0f0f0;padding:10px;margin:auto;width:auto;display:table;min-height:200px}
 .b-toc-container a{text-decoration:none}
